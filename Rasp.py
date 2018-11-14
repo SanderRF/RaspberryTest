@@ -35,9 +35,12 @@ while(l<2):
   time.sleep(1)
   l += 1
   i == 0
-  sense.clear()
+  x == 0
+  y == 0
   c == blue
+  sense.clear()
 
+print("done")
 time.sleep(5)
 sense.clear()
   
