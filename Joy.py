@@ -1,6 +1,6 @@
-from sense_hat import sense_hat
+from sense_hat import SenseHat
 import time
-sense = sense_hat()
+sense = SenseHat()
 
 x = 3
 y = 3
