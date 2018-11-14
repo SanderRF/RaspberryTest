@@ -19,6 +19,7 @@ i = 0
 c = white
 
 while(l<2):
+  print("run: " l+1)
   while(i<24):
     time.sleep(0.05)
     sense.set_pixel(x,y,c)
