@@ -51,13 +51,13 @@ while(l<40):
   if(i1<16):
     time.sleep(0.05)
     sense.set_pixel(x1,y1,c)
-    if x1 < 7 and y1 == 0:
+    if x1 < 6 and y1 == 1:
       x1 += 1
-    if x1 == 7 and y1 < 7:
+    if x1 == 6 and y1 < 6:
       y1 += 1
-    if y1 == 7 and x1 > 0:
+    if y1 == 6 and x1 > 1:
       x1 -= 1
-    if x1 == 0 and y1 > 0:
+    if x1 == 1 and y1 > 1:
       y1 -= 1
     i1 += 1
 
