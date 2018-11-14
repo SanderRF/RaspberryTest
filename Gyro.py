@@ -3,7 +3,7 @@ from sense_hat import SenseHat
 sense = SenseHat()
 
 # Display the letter J
-sense.show_letter("J")
+sense.show_letter("o")
 
 while True:
 	acceleration = sense.get_accelerometer_raw()
@@ -25,4 +25,4 @@ while True:
 	elif y == -1:
 	  sense.set_rotation(270)
 	else:
-	  sense.set_rotation(0)
+	  sense.set_pixel(-1,-1)

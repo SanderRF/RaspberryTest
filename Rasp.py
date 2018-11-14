@@ -55,5 +55,5 @@ def tone(l,i,x,y,c):
 threading.Thread(target=tone(l,i,x,y,c)).start()
 
 print("done")
-time.sleep(5)
+time.sleep(3)
 sense.clear()
