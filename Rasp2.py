@@ -56,7 +56,7 @@ while(l<48):
       y1 -= 1
     i1 += 1
 
-  if c == red
+  if c == red:
     c == green
 
 print("done")
