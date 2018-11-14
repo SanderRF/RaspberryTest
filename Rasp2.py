@@ -20,7 +20,7 @@ i1 = 0
 l = 0
 i = 0
 
-c = white
+c = blue
 
 while(l<40):
 
@@ -40,12 +40,12 @@ while(l<40):
   l += 1
 
   if c == red:
-    c = white
+    c = blue
   if c == green:
     c = red
   if c == blue:
     c = green
-  if c==white:
+  if c==green:
     c = blue
 
   if(i1<16):
