@@ -28,6 +28,14 @@ c = blue
 
 while(l<48):
 
+  if l == 24:
+    x = 1
+    y = 0
+    x1 = 2
+    y1 = 1
+    x2 = 3
+    y2 = 2
+
   if l > 24:
     if c == red:
       c = aqua
