@@ -58,9 +58,6 @@ while(l<48):
 
   if c == red:
     c == green
-
-    if c == green:
-    c = red
   
   if(i2<8):
     time.sleep(0.05)
@@ -74,6 +71,9 @@ while(l<48):
     if x2 == 2 and y2 > 2:
       y2 -= 1
     i2 += 1
+  
+  if c == green:
+    c = red
 
 print("done")
 time.sleep(3)
