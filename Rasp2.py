@@ -47,7 +47,7 @@ def tone(l,i,x,y,c):
       c = green
     if c==white:
       c = blue
-    while(i<16)
+    while(i<16):
       time.sleep(0.05)
       sense.set_pixel(x,y,c)
       if x < 6 and y == 1:
