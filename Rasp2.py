@@ -47,6 +47,18 @@ def tone(l,i,x,y,c):
       c = green
     if c==white:
       c = blue
+    while(i<16)
+      time.sleep(0.05)
+      sense.set_pixel(x,y,c)
+      if x < 6 and y == 1:
+        x += 1
+      if x == 6 and y < 6:
+        y += 1
+      if y == 6 and x > 1:
+        x -= 1
+      if x == 1 and y > 1:
+        y -= 1
+      i += 1
 
 threading.Thread(target=tone(l,i,x,y,c)).start()
 
