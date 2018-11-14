@@ -67,6 +67,11 @@ while(l<48):
       y2 -= 1
     i2 += 1
 
+    if c == green:
+      c = red
+    else:
+      c = green
+
     l += 1
 
 print("done")
