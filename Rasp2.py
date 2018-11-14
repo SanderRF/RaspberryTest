@@ -74,10 +74,6 @@ while(l<48):
     if x2 == 1 and y2 > 1:
       y2 -= 1
     i2 += 1
-    
-  if c == red:
-    c = green
-  
 
 
 print("done")
