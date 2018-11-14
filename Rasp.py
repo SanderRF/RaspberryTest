@@ -20,7 +20,7 @@ i = 0
 c = white
 
 #Thread 1
-def tone():
+def tone(l,i,x,y):
   while(l<10):
     print("run: " + str(l+1))
     while(i<24):
@@ -55,4 +55,3 @@ threading.Thread(target=tone).start()
 print("done")
 time.sleep(5)
 sense.clear()
-  
