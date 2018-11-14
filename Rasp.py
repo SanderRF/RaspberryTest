@@ -32,7 +32,7 @@ while(l<10):
     if x == 0 and y > 0:
       y -= 1
     i += 1
-  time.sleep(0.1)
+  time.sleep(0.05)
   l += 1
   i = 0
   x = 1
