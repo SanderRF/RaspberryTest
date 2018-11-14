@@ -22,8 +22,8 @@ i = 0
 
 c = white
 
-while(l<10):
-  print("outer run: " + str(l+1))
+while(l<40):
+
   if(i<24):
     time.sleep(0.05)
     sense.set_pixel(x,y,c)
@@ -48,7 +48,6 @@ while(l<10):
   if c==white:
     c = blue
 
-  print("inner run: " + str(l+1))
   if(i1<16):
     time.sleep(0.05)
     sense.set_pixel(x1,y1,c)
