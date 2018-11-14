@@ -50,7 +50,7 @@ def tone(l,i,x,y,c):
       c = blue
     sense.clear()
 
-threading.Thread(target=tone(0,0,1,0,c)).start()
+threading.Thread(target=tone(l,i,x,y,c)).start()
 
 print("done")
 time.sleep(5)
