@@ -9,7 +9,7 @@ white = (255,255,255)
 red = (255,0,0)
 green = (0,255,0)
 blue = (0,0,255)
-
+aqua = (0,255,255)
 x = 1
 y = 0
 
@@ -39,12 +39,14 @@ while(l<40):
 
   l += 1
 
-  if c == blue:
-    c = green
   if c == red:
-    c = blue
-  if c == green:
-    c = red
+      c = aqua
+    if c == green:
+      c = red
+    if c == blue:
+      c = green
+    if c==aqua:
+      c = blue
 
 
   if(i1<16):
