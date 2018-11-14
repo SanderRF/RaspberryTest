@@ -32,6 +32,7 @@ while(l<2):
       y -= 1
     i += 1
   
+  time.sleep(2)
   l += 1
   sense.clear()
   c == blue
