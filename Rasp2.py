@@ -62,16 +62,16 @@ while(l<48):
   if c == green:
     c = red
   
-  if(i2<16):
+  if(i2<8):
     time.sleep(0.05)
     sense.set_pixel(x2,y2,c)
-    if x2 < 6 and y2 == 1:
+    if x2 < 5 and y2 == 2:
       x2 += 1
-    if x2 == 6 and y2 < 6:
+    if x2 == 5 and y2 < 5:
       y1 += 1
-    if y2 == 6 and x2 > 1:
+    if y2 == 5 and x2 > 2:
       x2 -= 1
-    if x2 == 1 and y2 > 1:
+    if x2 == 2 and y2 > 2:
       y2 -= 1
     i2 += 1
 
