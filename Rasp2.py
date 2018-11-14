@@ -34,7 +34,7 @@ while(l<48):
     else:
       c = red 
 
-  if(i<24):
+  if(i<48):
     time.sleep(0.05)
     sense.set_pixel(x,y,c)
     if x < 7 and y == 0:
@@ -47,7 +47,7 @@ while(l<48):
       y -= 1
     i += 1
 
-  if(i1<16):
+  if(i1<32):
     time.sleep(0.05)
     sense.set_pixel(x1,y1,c)
     if x1 < 6 and y1 == 1:
@@ -60,7 +60,7 @@ while(l<48):
       y1 -= 1
     i1 += 1
   
-  if(i2<8):
+  if(i2<16):
     time.sleep(0.05)
     sense.set_pixel(x2,y2,c)
     if x2 < 5 and y2 == 2:
