@@ -32,15 +32,15 @@ while(l<3):
     if x == 0 and y > 0:
       y -= 1
     i += 1
-  
+  time.sleep(0.1)
   l += 1
   i = 0
   x = 1
   y = 0
-  if c==white:
-    c = blue
   if c == blue:
     c = green
+  if c==white:
+    c = blue
   sense.clear()
 
 print("done")
