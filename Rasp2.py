@@ -24,9 +24,15 @@ i2 = 0
 l = 0
 i = 0
 
-c = red
+c = blue
 
-while(l<96):
+while(l<48):
+
+  if l > 24:
+    if c == red:
+      c = aqua
+    else:
+      c = red 
 
   if(i<24):
     time.sleep(0.05)
@@ -68,7 +74,7 @@ while(l<96):
     i2 += 1
 
   if c == green:
-    c = red
+    c = blue
   else:
     c = green
 
