@@ -54,7 +54,7 @@ def tone(l,i,x,y,c):
 
 #Thread 2
 def ttwo():
-  print x
+  print("asda")
 
 
 threading.Thread(target=tone(l,i,x,y,c)).start()
