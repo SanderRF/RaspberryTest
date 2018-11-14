@@ -2,6 +2,7 @@ from sense_hat import SenseHat
 import time
 
 sense = SenseHat()
+sense.clear()
 
 c = (0,0,0)
 white = (255,255,255)
@@ -32,4 +33,5 @@ while(l<2):
     i += 1
   
   l += 1
+
   
