@@ -51,42 +51,14 @@ def tone(l,i,x,y,c):
       c = green
     if c==white:
       c = blue
-    sense.clear()
 
 #Thread 2
-def ttwo(l,i,x,y,c):
-  while(l<10):
-    print("run: " + str(l+1))
-    while(i<16):
-      time.sleep(0.05)
-      sense.set_pixel(x,y,c)
-      if x < 5 and y == 1:
-        x += 1
-      if x == 6 and y < 6:
-        y += 1
-      if y == 6 and x > 1:
-        x -= 1
-      if x == 1 and y > 1:
-        y -= 1
-      i += 1
-    time.sleep(0.05)
-    l += 1
-    i = 0
-    x = 1
-    y = 0
-    if c == red:
-      c = white
-    if c == green:
-      c = red
-    if c == blue:
-      c = green
-    if c==white:
-      c = blue
-    sense.clear()
+def ttwo():
+  print x
 
 
 threading.Thread(target=tone(l,i,x,y,c)).start()
-threading.Thread(target=ttwo(l,i,z,v,q)).start()
+threading.Thread(target=ttwo()).start()
 print("done")
 time.sleep(5)
 sense.clear()
