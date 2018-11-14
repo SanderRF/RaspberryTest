@@ -18,7 +18,7 @@ i = 0
 
 c = white
 
-while(l<3):
+while(l<10):
   print("run: " + str(l+1))
   while(i<24):
     time.sleep(0.05)
@@ -37,6 +37,10 @@ while(l<3):
   i = 0
   x = 1
   y = 0
+  if c == red:
+    c = white
+  if c == green:
+    c = red
   if c == blue:
     c = green
   if c==white:
