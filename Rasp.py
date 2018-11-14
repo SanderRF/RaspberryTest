@@ -53,12 +53,6 @@ def tone(l,i,x,y,c):
     if c==white:
       c = blue
 
-#Thread 2
-async def ttwo():
-  print("asda")
-
-
-asyncio.run(ttwo())
 threading.Thread(target=tone(l,i,x,y,c)).start()
 
 print("done")
