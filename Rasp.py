@@ -1,7 +1,6 @@
 from sense_hat import SenseHat
 import time
 import threading
-import asyncio
 
 sense = SenseHat()
 sense.clear()
@@ -25,7 +24,7 @@ c = white
 q = blue
 #Thread 1
 def tone(l,i,x,y,c):
-  while(l<100):
+  while(l<10):
     print("run: " + str(l+1))
     while(i<24):
       time.sleep(0.05)
