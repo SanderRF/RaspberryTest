@@ -54,7 +54,7 @@ def tone(l,i,x,y,c):
     sense.clear()
 
 #Thread 2
-def ttwo(l,i,x,y,c)
+def ttwo(l,i,x,y,c):
   while(l<10):
     print("run: " + str(l+1))
     while(i<16):
