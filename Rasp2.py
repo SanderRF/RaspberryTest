@@ -17,12 +17,16 @@ x1 = 2
 y1 = 1
 i1 = 0
 
+x2 = 3
+y2 = 2
+i2 = 0
+
 l = 0
 i = 0
 
 c = red
 
-while(l<40):
+while(l<48):
 
   if(i<24):
     time.sleep(0.05)
@@ -40,14 +44,7 @@ while(l<40):
   l += 1
 
   if c == red:
-    c = aqua
-  if c == green:
-    c = red
-  if c == blue:
     c = green
-  if c==aqua:
-    c = blue
-
 
   if(i1<16):
     time.sleep(0.05)
@@ -61,6 +58,26 @@ while(l<40):
     if x1 == 1 and y1 > 1:
       y1 -= 1
     i1 += 1
+
+  if c == green:
+    c = red
+  
+  if(i2<16):
+    time.sleep(0.05)
+    sense.set_pixel(x2,y2,c)
+    if x2 < 6 and y2 == 1:
+      x2 += 1
+    if x2 == 6 and y2 < 6:
+      y1 += 1
+    if y2 == 6 and x2 > 1:
+      x2 -= 1
+    if x2 == 1 and y2 > 1:
+      y2 -= 1
+    i2 += 1
+    
+  if c == red:
+    c = green
+  
 
 
 print("done")
