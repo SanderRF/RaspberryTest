@@ -25,7 +25,7 @@ c = white
 q = blue
 #Thread 1
 def tone(l,i,x,y,c):
-  while(l<10):
+  while(l<10000):
     print("run: " + str(l+1))
     while(i<24):
       time.sleep(0.05)
