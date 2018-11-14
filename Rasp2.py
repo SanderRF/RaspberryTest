@@ -40,13 +40,13 @@ while(l<40):
   l += 1
 
   if c == red:
-      c = aqua
-    if c == green:
-      c = red
-    if c == blue:
-      c = green
-    if c==aqua:
-      c = blue
+    c = aqua
+  if c == green:
+    c = red
+  if c == blue:
+    c = green
+  if c==aqua:
+    c = blue
 
 
   if(i1<16):
