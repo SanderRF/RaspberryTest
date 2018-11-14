@@ -24,7 +24,7 @@ c = white
 
 while(l<10):
   print("outer run: " + str(l+1))
-  while(i<24):
+  if(i<24):
     time.sleep(0.05)
     sense.set_pixel(x,y,c)
     if x < 7 and y == 0:
@@ -51,7 +51,7 @@ while(l<10):
     c = blue
 
   print("inner run: " + str(l+1))
-  while(i1<16):
+  if(i1<16):
     time.sleep(0.05)
     sense.set_pixel(x1,y1,c)
     if x1 < 7 and y1 == 0:
