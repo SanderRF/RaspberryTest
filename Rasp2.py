@@ -80,11 +80,12 @@ while(l<48):
     if x2 == 2 and y2 > 2:
       y2 -= 1
     i2 += 1
-
-  if c == green:
-    c = blue
-  else:
-    c = green
+ 
+  if l <= 24:
+    if c == green:
+      c = blue
+    else:
+      c = green
 
   l += 1
 
