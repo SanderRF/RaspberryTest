@@ -33,6 +33,8 @@ while(l<2):
     i += 1
   
   l += 1
+  sense.clear()
+  c == blue
 
 time.sleep(5)
 sense.clear()
