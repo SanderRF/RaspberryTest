@@ -26,7 +26,7 @@ i = 0
 
 c = red
 
-while(l<48):
+while(l<96):
 
   if(i<24):
     time.sleep(0.05)
