@@ -39,12 +39,13 @@ while(l<40):
 
   l += 1
 
+  if c == blue:
+    c = green
   if c == red:
     c = blue
   if c == green:
     c = red
-  if c == blue:
-    c = green
+
 
   if(i1<16):
     time.sleep(0.05)
