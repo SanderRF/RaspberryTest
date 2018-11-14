@@ -4,7 +4,7 @@ sense = SenseHat()
 
 red = (255,0,0)
 
-while true:
+while True:
     acc = sense.get_accelerometer_raw()
     x = acc['x']
     y = acc['y']
