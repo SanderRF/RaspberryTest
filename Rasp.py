@@ -1,6 +1,7 @@
 from sense_hat import SenseHat
 import time
 import threading
+import asyncio
 
 sense = SenseHat()
 sense.clear()
@@ -57,8 +58,8 @@ def ttwo():
   print("asda")
 
 
-threading.Thread(target=tone(l,i,x,y,c)).start()
-threading.Thread(target=ttwo()).start()
+async threading.Thread(target=tone(l,i,x,y,c)).start()
+async threading.Thread(target=ttwo()).start()
 print("done")
 time.sleep(5)
 sense.clear()
