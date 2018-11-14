@@ -20,7 +20,7 @@ i1 = 0
 l = 0
 i = 0
 
-c = blue
+c = red
 
 while(l<40):
 
