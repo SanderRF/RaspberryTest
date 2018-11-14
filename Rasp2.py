@@ -41,8 +41,6 @@ while(l<48):
       y -= 1
     i += 1
 
-  l += 1
-
   if(i1<16):
     time.sleep(0.05)
     sense.set_pixel(x1,y1,c)
@@ -55,9 +53,6 @@ while(l<48):
     if x1 == 1 and y1 > 1:
       y1 -= 1
     i1 += 1
-
-  if c == red:
-    c == green
   
   if(i2<8):
     time.sleep(0.05)
@@ -71,9 +66,8 @@ while(l<48):
     if x2 == 2 and y2 > 2:
       y2 -= 1
     i2 += 1
-  
-  if c == green:
-    c = red
+
+    l += 1
 
 print("done")
 time.sleep(3)
