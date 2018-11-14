@@ -18,7 +18,7 @@ i = 0
 
 c = white
 
-while(l<2):
+while(l<3):
   print("run: " + str(l+1))
   while(i<24):
     time.sleep(0.05)
@@ -33,12 +33,14 @@ while(l<2):
       y -= 1
     i += 1
   
-  time.sleep(1)
   l += 1
   i = 0
-  x = 0
+  x = 1
   y = 0
-  c = blue
+  if c==white:
+    c = blue
+  if c == blue:
+    c = green
   sense.clear()
 
 print("done")
