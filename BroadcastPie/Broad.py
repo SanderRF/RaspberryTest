@@ -2,6 +2,7 @@ BROADCAST_TO_PORT = 6969
 import time
 from socket import *
 from datetime import datetime
+from sense_hat import SenseHat
 
 s = socket(AF_INET, SOCK_DGRAM)
 #s.bind(('', 14593))     # (ip, port)
