@@ -21,3 +21,8 @@ w,w,w,w,w,w,w,w
 ]
 
 sense.set_pixels(image)
+time.sleep(1)
+sense.clear()
+
+sense.show_letter('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
+
