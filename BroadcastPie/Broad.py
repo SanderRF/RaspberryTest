@@ -24,5 +24,4 @@ sense.set_pixels(image)
 time.sleep(1)
 sense.clear()
 
-sense.show_message('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
-
+sense.show_message("JEG VIL SPILLE BOLD!!!!☺☻" , text_colour=g, back_colour=b, scroll_speed=1)
