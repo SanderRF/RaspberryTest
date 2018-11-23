@@ -24,5 +24,6 @@ sense.set_pixels(image)
 time.sleep(1)
 sense.clear()
 
-sense.show_letter('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
+sense.text_colour(r)
+sense.show_message('REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
 
