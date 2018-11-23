@@ -14,6 +14,6 @@ s = socket(AF_INET, SOCK_DGRAM)
 s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 while True:
     data = "Current temperature:" + str(temp)
-    s.sendto(bytes(data), ('<broadcast>', 6969))
+    s.sendto(bytes(data,"UTF-8"), ('<broadcast>', 6969))
     print(data)
     time.sleep(1)
