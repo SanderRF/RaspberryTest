@@ -6,7 +6,7 @@ from datetime import datetime
 sense = SenseHat()
 sense.clear()
 
-temp = sense.get_temperature
+temp = sense.get_temperature()
 
 s = socket(AF_INET, SOCK_DGRAM)
 #s.bind(('', 6969))  #(ip,port)
