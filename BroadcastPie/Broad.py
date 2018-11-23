@@ -16,4 +16,5 @@ while True:
     data = "Current temperature:" + str(temp)
     s.sendto(bytes(data,"UTF-8"), ('<broadcast>', 6969))
     print(data)
+    sense.show_message(str(temp)
     time.sleep(1)
