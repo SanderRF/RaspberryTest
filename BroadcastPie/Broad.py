@@ -1,15 +1,14 @@
-BROADCAST_TO_PORT = 6969
 import time
+from sense_hat import SenseHat
 from socket import *
 from datetime import datetime
-from sense_hat import SenseHat
 
 s = socket(AF_INET, SOCK_DGRAM)
-#s.bind(('', 14593))     # (ip, port)
-# no explicit bind: will bind to default IP + random port
+#s.bind(('', 6969))  #(ip,port)
+
 s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 while True:
-	data = "Current time " + str(datetime.now())
-	s.sendto(bytes(data, "UTF-8"), ('<broadcast>', BROADCAST_TO_PORT))
-	print(data)
+    data = "Current time" + str(datetime.now())
+    s.sendto(bytes(data,"UTF-8"), ('<broadcast>', 6969))
+    print(data)
     time.sleep(1)
