@@ -14,5 +14,3 @@ temp = sense.get_temperature()
 print(temp)
 
 sense.show_message(str(temp)
-
-sense.clear()
