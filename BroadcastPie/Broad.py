@@ -12,5 +12,3 @@ r = (100,0,0)
 
 temp = sense.get_temperature()
 print(temp)
-
-sense.show_message(str(temp)
