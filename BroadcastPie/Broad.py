@@ -1,7 +1,6 @@
 import time
 from sense_hat import SenseHat
 from socket import *
-from datetime import datetime
 
 sense = SenseHat()
 sense.clear()
