@@ -3,12 +3,17 @@ from sense_hat import SenseHat
 from socket import *
 from datetime import datetime
 
+sense = SenseHat()
+sense.clear()
+
+temp = sense.get_temperature()
+
 s = socket(AF_INET, SOCK_DGRAM)
 #s.bind(('', 6969))  #(ip,port)
 
 s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 while True:
-    data = "Current time " + str(datetime.now())
-    s.sendto(bytes(data,"UTF-8"), ('<broadcast>', 6969))
+    data = "Current temperature " + temp
+    s.sendto(bytes(data), ('<broadcast>', 6969))
     print(data)
     time.sleep(1)
